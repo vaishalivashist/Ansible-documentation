@@ -1,1 +1,25 @@
+Modules (also referred to as “task plugins” or “library plugins”) are discrete units of code that can be used from the command line or in a playbook task.
+Ansible executes each module, usually on the remote target node, and collects return values.
+	• Cloud computing
+	• Networking
+	• Virtualization
+	• Containers
+
+You can execute modules from the command line:
+	• ansible webservers -m service -a "name=httpd state=started"
+	• ansible webservers -m ping
+	• ansible webservers -m command -a "/sbin/reboot -t now"
+
+Ansible Executable:
+	• Typing Ansible, at a prompt where Ansible is installed
+	• Easy to use, with Ansible Modules
+	• Great for initially setting up a project and testing our Ansible config. 
+Ansible Playbook:
+  A book of plays
+  Written in human readable config
+Ansible Inventories:
+	• An inventory of target
+	• Hosts, network switches, containers, storage arrays and more
+	• Useful info
+	• Dynamic inventories
 
